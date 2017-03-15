@@ -1,0 +1,14 @@
+{
+  "name": "redux-map-reducer",
+  "version": "1.0.0",
+  "main": "./src/map-reducer.ts",
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "facebook/immutable-js#d66e3fe13830df8ab5ecc867a3ff0a2384e2621d",
+    "redux": "^3.6.0",
+    "typescript": "^2.2.1"
+  },
+  "scripts": {
+    "build": "tsc --outDir ./target"
+  }
+}
