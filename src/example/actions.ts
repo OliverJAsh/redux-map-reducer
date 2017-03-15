@@ -5,7 +5,7 @@ export const ToggleActionType = 'Toggle'
 export class ToggleAction implements ReduxAction {
     readonly type = ToggleActionType
     constructor(
-        public id: DropDownMenuId
+        public componentId: DropDownMenuId
     ) {}
 }
 

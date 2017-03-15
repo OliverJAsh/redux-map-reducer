@@ -14,10 +14,11 @@ const componentReducer: Reducer<DropDownMenuState, Action> = (
     }
 }
 
-const componentMapReducer = mapReducer(action => action.id, componentReducer)
+const componentMapReducer = mapReducer(action => action.componentId, componentReducer)
 
 // Test
 
 const initialComponentMap: DropDownMenuStateMap | undefined = undefined
-const componentMap = componentMapReducer(initialComponentMap, new ToggleAction(1))
+const componentId = 1
+const componentMap = componentMapReducer(initialComponentMap, new ToggleAction(componentId))
 console.log(JSON.stringify({ componentMap }))
